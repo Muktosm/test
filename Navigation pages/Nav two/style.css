@@ -1,7 +1,6 @@
-/* font link part start */
+/* font link part star */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
-/* font link part end  */
-
+/* font link part end */
 /* root variable part start */
 :root {
   --DM_sans: "DM Sans", sans-serif;
@@ -12,63 +11,66 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline: none;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #000;
   display: inline-block;
 }
 ul,
 ol {
   list-style-type: none;
 }
-
 /* common css part end */
-/* navbar part start */
-.navbar {
+/* navbar part start  */
+#navbar {
   max-width: 1400px;
-  margin: 0 auto;
 }
 .container {
   width: 1170px;
+  margin: 0 auto;
+  padding: 30px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 30px auto;
-  background: #d8d8d8;
 }
 .logo > a {
   font: 700 24px --DM_sans;
   color: var(--brand_clr);
+  letter-spacing: -0.29px;
 }
 .menu_mid > ul {
   display: flex;
-  gap: 39px;
-  align-items: center;
+  gap: 35px;
 }
 .menu_mid > ul > li > a {
-  font: 400 16px --DM_sans;
+  font: 400 16px var(--DM_sans);
   line-height: 26px;
   color: var(--brand_clr);
 }
-.sing_in > ul {
-  display: flex;
-  gap: 28px;
+.fa-angle-down {
+  margin-left: 9px;
 }
-.sing_in > ul > li > a {
-  font: 500 16px --DM_sans;
+.menu_right > ul {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+}
+.menu_right > ul > li > a {
+  font: 400 16px --DM_sans;
   color: var(--brand_clr);
+  line-height: 26px;
   padding: 9px 22px;
+}
+.borderd_link {
   border-radius: 100px;
-  background: transparent;
+  border: 2px solid transparent;
   transition: all linear .3s;
 }
-.sing_in > ul > li > a:hover {
-  background: #482be7;
-  color: #fff;
+.borderd_link:hover {
+  border-radius: 100px;
+  border: 2px solid #ebeaed;
 }
-
 /* navbar part end */
