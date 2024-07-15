@@ -1,0 +1,61 @@
+/* font link part start */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/* font link part end  */
+/* root varibale part start */
+:root {
+  --brand_clr: #1e0e62;
+  --DM_sans: "DM Sans", sans-serif;
+}
+/* root variable part end */
+/* common css part start */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+/* common css part end */
+/* navigation part start */
+#navigation {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.container {
+  width: 1170px;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo > a {
+  font: 700 26px var(--DM_sans);
+  color: var(--brand_clr);
+}
+.menu > ul {
+  width: 370px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu >ul a{
+    font: 400 16px var(--DM_sans);
+    color: var(--brand_clr);
+    padding: 9px 22px;
+    border-radius: 100px;
+    transition: all linear .3s;
+}
+.menu >ul a:hover{
+    background: #E93A7D;
+    color: white;
+    font-weight: 700;
+}
+/* navigation part end  */
