@@ -1,0 +1,64 @@
+/* font link part start */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+/* font link part end  */
+
+/* root variable part start */
+:root {
+  --DM_sans: "DM Sans", sans-serif;
+  --brand_clr: #1e0e62;
+}
+/* root variable part end */
+/* common css part start */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+ul,
+ol {
+  list-style-type: none;
+}
+
+/* common css part end */
+.navbar {
+  width: 1400px;
+}
+.menu {
+  width: 1165px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  align-items: center;
+}
+.button > a {
+  font: 500 16px var(--DM_sans);
+  text-align: center;
+  line-height: 22px;
+  color: #1e0e62;
+  padding: 9px 24px;
+  border: 2px solid #ebeaed;
+  border-radius: 100px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 15px 0px;
+}
+.logo > a {
+  font: 700 24px var(--DM_sans);
+  letter-spacing: -0.29px;
+  color: #1e0e62;
+}
+.rightButton > ul {
+  display: flex;
+  gap: 29px;
+}
+.rightButton > ul > li > a {
+  font: 500 16px var(--DM_sans);
+  text-align: center;
+  line-height: 22px;
+  color: #1e0e62;
+}
